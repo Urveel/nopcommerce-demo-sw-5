@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite" verbose="1" >
+
+    <groups>
+        <run>
+            <include name="sanity"> </include>
+        </run>
+
+    </groups>
+
+    <listeners>
+        <listener class-name="com.nopcommerce.demo.customlisteners.CustomListeners"/>
+
+    </listeners>
+    <test name="Sanity Test" >
+        <classes>
+            <class name="com.nopcommerce.demo.testsuite.LoginPageTest"/>
+        </classes>
+    </test>
+</suite>
